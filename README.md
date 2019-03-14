@@ -3,5 +3,7 @@ Este es el repositorio para la actividad de la kata simple grupal para la materi
 
 ## Integrantes
 -Sergio Cárdenas
+
 -Oscar Espinel
+
 -Tatiana Macías Cárdenas
