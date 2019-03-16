@@ -20,3 +20,7 @@ class TestEstadisticas(unittest.TestCase):
         self.assertEqual(Estadisticas().dar_estadisticas("")[0], 0, "String vacio")
         self.assertEqual(Estadisticas().dar_estadisticas("")[1], 0, "Minimo")
         self.assertEqual(Estadisticas().dar_estadisticas("")[2], 0, "Maximo")
+
+    def test_dar_estadiciticas_un_numero_maximo(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("1")[2], 1, "Maximo")
+        self.assertEqual(Estadisticas().dar_estadisticas("2")[2], 2, "Maximo")
