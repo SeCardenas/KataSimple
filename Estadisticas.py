@@ -6,9 +6,12 @@ class Estadisticas:
         elif "," in cadena:
             numeros = cadena.split(",")
             minimo = int(numeros[0])
+            maximo = int(numeros[0])
             for numero in numeros:
                 if minimo > int(numero):
                     minimo = int(numero)
-            return [len(numeros), minimo, max(int(numeros[0]), int(numeros[1]))]
+                if maximo < int(numero):
+                    maximo = int(numero)
+            return [len(numeros), minimo, maximo]
         else:
             return [1,int(cadena), int(cadena)]
