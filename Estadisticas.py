@@ -9,6 +9,6 @@ class Estadisticas:
             for numero in numeros:
                 if minimo > int(numero):
                     minimo = int(numero)
-            return [len(numeros), minimo]
+            return [len(numeros), minimo, max(int(numeros[0]), int(numeros[1]))]
         else:
             return [1,int(cadena), int(cadena)]
