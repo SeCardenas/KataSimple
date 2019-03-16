@@ -32,3 +32,6 @@ class TestEstadisticas(unittest.TestCase):
     def test_dar_estadiciticas_n_numeros_maximo(self):
         self.assertEqual(Estadisticas().dar_estadisticas("3,4,6,9,6")[2], 9, "Maximo")
         self.assertEqual(Estadisticas().dar_estadisticas("7,3,5,2,1,4")[2], 7, "Maximo")
+
+    def test_dar_estadiciticas_string_vacio_promedio(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("")[3], 0, "String vacio")
