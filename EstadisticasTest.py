@@ -24,3 +24,7 @@ class TestEstadisticas(unittest.TestCase):
     def test_dar_estadiciticas_un_numero_maximo(self):
         self.assertEqual(Estadisticas().dar_estadisticas("1")[2], 1, "Maximo")
         self.assertEqual(Estadisticas().dar_estadisticas("2")[2], 2, "Maximo")
+
+    def test_dar_estadiciticas_dos_numeros_maximo(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("1,5")[2], 5, "Maximo")
+        self.assertEqual(Estadisticas().dar_estadisticas("2,6")[2], 6, "Maximo")
