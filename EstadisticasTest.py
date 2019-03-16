@@ -38,3 +38,7 @@ class TestEstadisticas(unittest.TestCase):
 
     def test_dar_estadiciticas_un_solo_numero_promedio(self):
         self.assertEqual(Estadisticas().dar_estadisticas("4")[3], 4, "Promedio")
+
+    def test_dar_estadiciticas_dos_numeros_promedio(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("2,4")[3], 3, "Promedio")
+        self.assertEqual(Estadisticas().dar_estadisticas("3,6")[3], 4.5, "Promedio")
