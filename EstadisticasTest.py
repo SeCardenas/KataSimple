@@ -19,3 +19,6 @@ class TestEstadisticas(unittest.TestCase):
         self.assertEqual(Estadisticas().dar_estadisticas("1")[1], 1, "Minimo")
         self.assertEqual(Estadisticas().dar_estadisticas("2")[1], 2, "Minimo")
 
+    def test_dar_estadiciticas_dos_numeros_y_minimo(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("3,5")[0], 2, "Dos")
+        self.assertEqual(Estadisticas().dar_estadisticas("3,5")[1], 3, "Minimo")
