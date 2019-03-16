@@ -5,6 +5,10 @@ class Estadisticas:
             return [0,0]
         elif "," in cadena:
             numeros = cadena.split(",")
-            return [len(numeros), min(int(numeros[0]), int(numeros[1]))]
+            minimo = int(numeros[0])
+            for numero in numeros:
+                if minimo > int(numero):
+                    minimo = int(numero)
+            return [len(numeros), minimo]
         else:
             return [1,int(cadena)]
