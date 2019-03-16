@@ -3,9 +3,6 @@ import unittest
 from Estadisticas import Estadisticas
 
 class TestEstadisticas(unittest.TestCase):
-    def test_dar_estadiciticas_un_solo_numero(self):
-        self.assertEqual(Estadisticas().dar_estadisticas("1")[0], 1, "Un solo numero")
-
     def test_dar_estadiciticas_dos_numeros(self):
         self.assertEqual(Estadisticas().dar_estadisticas("1,2")[0], 2, "Dos numeros")
 
