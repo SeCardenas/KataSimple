@@ -35,3 +35,6 @@ class TestEstadisticas(unittest.TestCase):
 
     def test_dar_estadiciticas_string_vacio_promedio(self):
         self.assertEqual(Estadisticas().dar_estadisticas("")[3], 0, "String vacio")
+
+    def test_dar_estadiciticas_un_solo_numero_promedio(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("4")[3], 4, "Promedio")
