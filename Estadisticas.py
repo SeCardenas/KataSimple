@@ -8,10 +8,8 @@ class Estadisticas:
             minimo = int(numeros[0])
             maximo = int(numeros[0])
             for numero in numeros:
-                if minimo > int(numero):
-                    minimo = int(numero)
-                if maximo < int(numero):
-                    maximo = int(numero)
+                minimo = min(int(numero),minimo)
+                maximo = max(int(numero),maximo)
             return [len(numeros), minimo, maximo]
         else:
             return [1,int(cadena), int(cadena)]
