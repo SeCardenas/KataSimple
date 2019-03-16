@@ -19,3 +19,8 @@ class TestEstadisticas(unittest.TestCase):
     def test_dar_estadiciticas_n_numeros_y_minimo(self):
         self.assertEqual(Estadisticas().dar_estadisticas("3,5,2,1")[0], 4, "Cuatro")
         self.assertEqual(Estadisticas().dar_estadisticas("3,5,2,1")[1], 1, "Minimo")
+
+    def test_dar_estadiciticas_string_vacio_minimo_maximo(self):
+        self.assertEqual(Estadisticas().dar_estadisticas("")[0], 0, "String vacio")
+        self.assertEqual(Estadisticas().dar_estadisticas("")[1], 0, "Minimo")
+        self.assertEqual(Estadisticas().dar_estadisticas("")[2], 0, "Maximo")
